@@ -21,7 +21,7 @@ jobs:
       - name: Deploy ke EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_HOST }} << 'EOF'
-            cd /var/www/crud-kesehatan
+            cd /var/www/ifb-cc-t4/crud-kesehatan
             git pull origin main
             npm install
             pm2 restart crud-kesehatan
