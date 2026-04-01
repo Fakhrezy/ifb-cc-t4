@@ -12,13 +12,14 @@
 			}
 			body {
 				font-family: "Segoe UI", sans-serif;
-				background: #f0f4f8;
-				color: #333;
+				background: #0f1419;
+				color: #e0e0e0;
 			}
 			header {
-				background: #2c7be5;
-				color: white;
+				background: #1a2332;
+				color: #64b5f6;
 				padding: 20px 40px;
+				border-bottom: 2px solid #2c3e50;
 			}
 			header h1 {
 				font-size: 1.6rem;
@@ -26,6 +27,7 @@
 			header p {
 				font-size: 0.9rem;
 				opacity: 0.85;
+				color: #90caf9;
 			}
 			.container {
 				max-width: 900px;
@@ -33,17 +35,18 @@
 				padding: 0 20px;
 			}
 			.card {
-				background: white;
+				background: #1e2732;
 				border-radius: 10px;
 				padding: 25px;
 				margin-bottom: 25px;
-				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+				box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+				border: 1px solid #2c3e50;
 			}
 			h2 {
 				font-size: 1.1rem;
 				margin-bottom: 15px;
-				color: #2c7be5;
-				border-bottom: 2px solid #e8f0fb;
+				color: #64b5f6;
+				border-bottom: 2px solid #2c7be5;
 				padding-bottom: 8px;
 			}
 			.form-grid {
@@ -54,19 +57,22 @@
 			label {
 				display: block;
 				font-size: 0.82rem;
-				color: #666;
+				color: #90caf9;
 				margin-bottom: 4px;
 			}
 			input {
 				width: 100%;
 				padding: 9px 12px;
-				border: 1px solid #dce3ec;
+				border: 1px solid #2c3e50;
 				border-radius: 6px;
 				font-size: 0.95rem;
+				background: #0f1419;
+				color: #e0e0e0;
 			}
 			input:focus {
 				outline: none;
 				border-color: #2c7be5;
+				background: #1a2332;
 			}
 			.btn-row {
 				margin-top: 15px;
@@ -80,17 +86,23 @@
 				cursor: pointer;
 				font-size: 0.9rem;
 				font-weight: 600;
+				transition: all 0.2s ease;
 			}
 			.btn-primary {
 				background: #2c7be5;
 				color: white;
 			}
 			.btn-secondary {
-				background: #e8f0fb;
-				color: #2c7be5;
+				background: #2c3e50;
+				color: #64b5f6;
+				border: 1px solid #2c7be5;
 			}
 			.btn-primary:hover {
 				background: #1a68d1;
+				transform: translateY(-2px);
+			}
+			.btn-secondary:hover {
+				background: #364555;
 			}
 			table {
 				width: 100%;
@@ -98,36 +110,46 @@
 				font-size: 0.92rem;
 			}
 			th {
-				background: #f0f4f8;
+				background: #2c3e50;
 				padding: 10px 14px;
 				text-align: left;
 				font-weight: 600;
-				color: #555;
+				color: #90caf9;
+				border-bottom: 2px solid #2c7be5;
 			}
 			td {
 				padding: 10px 14px;
-				border-bottom: 1px solid #f0f0f0;
+				border-bottom: 1px solid #2c3e50;
+				color: #e0e0e0;
 			}
 			tr:hover td {
-				background: #fafcff;
+				background: #252c3a;
 			}
 			.btn-edit {
-				background: #fff3cd;
-				color: #856404;
+				background: #3d3100;
+				color: #ffd54f;
 				padding: 5px 12px;
 				border-radius: 5px;
 				font-size: 0.82rem;
+				border: 1px solid #ffd54f;
+			}
+			.btn-edit:hover {
+				background: #4d4100;
 			}
 			.btn-delete {
-				background: #fde8e8;
-				color: #c53030;
+				background: #3d1a1a;
+				color: #ff6b6b;
 				padding: 5px 12px;
 				border-radius: 5px;
 				font-size: 0.82rem;
+				border: 1px solid #ff6b6b;
+			}
+			.btn-delete:hover {
+				background: #4d2a2a;
 			}
 			.empty {
 				text-align: center;
-				color: #aaa;
+				color: #666;
 				padding: 30px;
 			}
 			#alert {
@@ -138,13 +160,15 @@
 				font-size: 0.9rem;
 			}
 			.alert-success {
-				background: #d4edda;
-				color: #155724;
+				background: #1b5e20;
+				color: #72db72;
+				border: 1px solid #72db72;
 				display: block !important;
 			}
 			.alert-error {
-				background: #f8d7da;
-				color: #721c24;
+				background: #4a1a1a;
+				color: #ff6b6b;
+				border: 1px solid #ff6b6b;
 				display: block !important;
 			}
 			.icon {
